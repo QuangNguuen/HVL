@@ -85,6 +85,7 @@ body {
 
 /**Inside main-function**/
 /************************/
+/************************/
 .introduction {
     height: 40%;
     width: 100%;
@@ -111,21 +112,71 @@ body {
     background-color: #B0B0B0;
 }
 /**Playlist**/
+/************/
 .music {
     display: flex;
     flex-direction: column;
     gap: 8px;
-
-    min-height: 0;
-    max-height: 55%;
-    overflow-y: auto;
 }
 
-.hvl {
-    height: 20%;
-    width: 90%;
-    text-align: left;
-    white-space: pre;
+.track{
+    background-color: white;
+    height: 40px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    position: absolute;
+    left: 1%;
+}
+.song-info {
+    position: absolute;
+    left: 10%;
+}
+
+.duration {
+    position: absolute;
+    left: 80%;
+}
+.save {
+    position: absolute;
+    left: 90%
+}
+.more-option {
+    position: absolute;
+    left: 60%;
+}
+
+/**left side**/
+.track-number {
+    display: block;
+}
+.play-button {
+    display: none;
+}
+
+.track:hover .track-number {
+    display:none;
+}
+.track:hover .play-button {
+    display: block;
+}
+
+/**middle - info**/
+
+/**right side**/
+.save, .more-option {
+    display: none;
+}
+.duration {
+    display: block;
+}
+
+.track:hover .save, .track:hover .more-option {
+    display: block;
 }
 
 
