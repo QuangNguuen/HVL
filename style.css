@@ -1,4 +1,5 @@
 
+@import url('https://googleapis.com');
 
 * {
     margin: 0;
@@ -89,12 +90,28 @@ body {
 .introduction {
     height: 40%;
     width: 100%;
+    display: flex;
 }
-
 .introduction img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 175px;
+    margin: 20px;
+    border: 5px solid white;
+}
+.tribute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tribute h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+}
+.tribute h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 30px;
 }
 
 .full-playlist {
@@ -117,6 +134,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+.music pre {
+    margin-left: 1.5%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.music h1 {
+    margin-left: 1.5%;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .track{
@@ -143,16 +172,17 @@ body {
 }
 .save {
     position: absolute;
-    left: 90%
+    left: 65%
 }
 .more-option {
     position: absolute;
-    left: 60%;
+    left: 87%;
 }
 
 /**left side**/
 .track-number {
     display: block;
+    font-family: 'Open Sans', sans-serif;
 }
 .play-button {
     display: none;
@@ -166,17 +196,26 @@ body {
 }
 
 /**middle - info**/
-
+.track-name {
+    font-family: 'Open Sans', sans-serif;
+}
+.artist {
+    font-family: 'Open Sans', sans-serif;
+}
 /**right side**/
 .save, .more-option {
     display: none;
 }
 .duration {
     display: block;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .track:hover .save, .track:hover .more-option {
     display: block;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
 }
 
 
@@ -189,4 +228,44 @@ body {
 .info-inside {
     width: 100px;
     height: 150px;
+}
+
+.info h2{
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.info button {
+    margin-left: 10px;
+    height: 30px;
+    width: 120px;
+
+    border-radius: 10px;
+    border: 1px solid #B0B0B0;
+    background-color: #B0B0B0;
+
+}
+
+
+.info-inside {
+    height: 50%;
+    width: 100%;
+}
+.info-inside img {
+    height: 150px;
+    width: auto;
+    margin: 10px;
+    border: 5px solid white;
+
+    flex-shrink: 0;
+    float: left;
+}
+.info-inside p {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
