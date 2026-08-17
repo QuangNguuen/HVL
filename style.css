@@ -16,7 +16,10 @@ html, body {
 /**Big frame, parents elements/div**/
 /***********************************/
 body {
-    background-color: #121212;
+    background-image: url('../Image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -29,7 +32,7 @@ body {
     margin: 0.75%;
     width: 98%;
     height: 7%;
-    background-color: #121212;
+    background-color: transparent;
 }
 
 .main-function {
@@ -47,7 +50,7 @@ body {
 .sidebar {
     width: 20%;
     height: 100%;
-    background-color: #444444;
+    background-color: #1E1E1E;
 
     display: flex;
     flex-direction: column;
@@ -60,7 +63,7 @@ body {
 .main-stream {
     width: 50%;
     height: 100%;
-    background-color: #444444;
+    background-color: #1E1E1E;
 
     display: flex;
     flex-direction: column;
@@ -72,7 +75,7 @@ body {
 .info {
     width: 30%;
     height: 100%;
-    background-color: #444444;
+    background-color: #1E1E1E;
 }
 
 /**Inside sidebar div**/
@@ -106,13 +109,13 @@ body {
 }
 .tribute h1 {
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #E0E0E0;
     font-weight: bold;
     font-size: 70px;
 }
 .tribute h2 {
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #E0E0E0;
     font-size: 30px;
 }
 
@@ -141,17 +144,17 @@ body {
     margin-left: 1.5%;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #E0E0E0;
 }
 .music h1 {
     margin-left: 1.5%;
     font-size: 40px;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #E0E0E0;
 }
 
 .track{
-    background-color: white;
+    background-color: #3B82F6;
     height: 40px;
 
     position: relative;
@@ -235,7 +238,7 @@ body {
 .info h2{
     margin: 5px;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: #E0E0E0;
     font-size: 30px;
 }
 .info button {
@@ -268,6 +271,6 @@ body {
     font-size: 16px;
     line-height: 1.2;
 
-    color: white;
+    color: #B0B0B0;
     font-family: 'Open Sans', sans-serif;
 }
