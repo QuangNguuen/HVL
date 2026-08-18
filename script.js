@@ -32,7 +32,35 @@ const songs = [
 ]
 
 //Fit songs in the web//
+const musicTrack = document.querySelector('.music');
+songs.forEach (song => {
+    const track = createSong(song);
+    musicTrack.appendChild(track);
+});
 
+function createSong(song) {
+    const track = document.createElement('div');
+    track.className = 'track';
+    track.dataset.songNum = song.number;
+
+    track.innerHTML = `
+                    <div class="left-side">
+                        <span class="track-number">${song.number}</span>
+                        <span class="play-button" id="play-button">▶</span>
+                    </div>
+
+                    <div class="song-info">
+                        <p class="track-name">${song.title}</p>
+                        <p class="artist">RPT MCK</p>
+                    </div>
+
+                    <button class="save">+</button>
+                    <span class="duration">${song.duration}</span>
+                    <button class="more-option">⋯</button>
+    `
+
+    return track;
+}
 
 
 //Play music//

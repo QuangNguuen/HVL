@@ -12,6 +12,7 @@ html, body {
     overflow: hidden;
 }
 
+/***********************************/
 /**Big frame, parents elements/div**/
 /***********************************/
 body {
@@ -44,6 +45,7 @@ body {
     display: flex;
 }
 
+/****************************/
 /**Inside main-function div**/
 /****************************/
 .sidebar {
@@ -81,10 +83,12 @@ body {
     border-radius: 15px;
 }
 
+/***************/
 /**Main-stream**/
 /***************/
 
 /**Introdution**/
+/***************/
 .introduction {
     height: 40%;
     width: 100%;
@@ -113,6 +117,7 @@ body {
 }
 
 /**Album**/
+/*********/
 .album {
     margin-bottom: 10px;
     margin-left: 65px;
@@ -126,4 +131,130 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+/**Full-playlist**/
+/*****************/
+.full-playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
 
+.left {
+    display: flex;
+    margin-left: 35px;
+    gap: 20px;
+}
+.right {
+    display: flex;
+    margin-right: 35px;
+    gap: 20px;
+}
+
+.function {
+    background: transparent;
+    border: none;
+    
+}
+
+/**Music**/
+/*********/
+.music {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.music h1 {
+    margin-left: 1.5%;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #E0E0E0;
+}
+
+.music pre {
+    margin-left: 1.5%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #E0E0E0;
+}
+
+.track{
+    background-color: #212B42;
+    height: 40px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    margin-top: 3px;
+
+    height: 40px;
+}
+
+.left-side {
+    position: absolute;
+    left: 1%;
+
+    color: white;
+}
+.song-info {
+    position: absolute;
+    left: 10%;
+
+    color: white;
+}
+
+.duration {
+    position: absolute;
+    left: 80%;
+
+    color: white;
+}
+.save {
+    position: absolute;
+    left: 65%
+}
+.more-option {
+    position: absolute;
+    left: 87%;
+}
+
+/**left side**/
+.track-number {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+.play-button {
+    display: none;
+}
+
+.track:hover .track-number {
+    display:none;
+}
+.track:hover .play-button {
+    display: block;
+}
+
+/**middle - info**/
+.track-name {
+    font-family: 'Open Sans', sans-serif;
+}
+.artist {
+    font-family: 'Open Sans', sans-serif;
+}
+/**right side**/
+.save, .more-option {
+    display: none;
+}
+.duration {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.track:hover .save, .track:hover .more-option {
+    display: block;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+}
