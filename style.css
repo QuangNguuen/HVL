@@ -1,4 +1,3 @@
-
 @import url('https://googleapis.com');
 
 * {
@@ -39,7 +38,7 @@ body {
     margin: 0.75%;
     width: 98%;
     height: 80%;
-    background-color: #121212;
+    background-color: transparent;
 
     gap: 10px;
     display: flex;
@@ -50,7 +49,8 @@ body {
 .sidebar {
     width: 20%;
     height: 100%;
-    background-color: #1E1E1E;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 15px;
 
     display: flex;
     flex-direction: column;
@@ -61,9 +61,11 @@ body {
 }
 
 .main-stream {
-    width: 50%;
+    width: 55%;
     height: 100%;
-    background-color: #1E1E1E;
+    background-color: rgba(74, 96, 128, 0.7);
+    border-radius: 15px;
+
 
     display: flex;
     flex-direction: column;
@@ -73,25 +75,16 @@ body {
 }
 
 .info {
-    width: 30%;
+    width: 25%;
     height: 100%;
-    background-color: #1E1E1E;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 15px;
 }
 
-/**Inside sidebar div**/
-/**********************/
-.main, .playlist, .library {
-    height: 30px;
-    width: 120px;
+/**Main-stream**/
+/***************/
 
-    border-radius: 10px;
-    border: 1px solid #B0B0B0;
-    background-color: #B0B0B0;
-}
-
-/**Inside main-function**/
-/************************/
-/************************/
+/**Introdution**/
 .introduction {
     height: 40%;
     width: 100%;
@@ -109,168 +102,28 @@ body {
 }
 .tribute h1 {
     font-family: 'Open Sans', sans-serif;
-    color: #E0E0E0;
+    color: white;
     font-weight: bold;
     font-size: 70px;
 }
 .tribute h2 {
     font-family: 'Open Sans', sans-serif;
-    color: #E0E0E0;
+    color: white;
     font-size: 30px;
 }
 
-.full-playlist {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
-.full-playlist button {
-    height: 30px;
-    width: 120px;
-
-    border-radius: 10px;
-    border: 1px solid #B0B0B0;
-    background-color: #B0B0B0;
-}
-/**Playlist**/
-/************/
-.music {
+/**Album**/
+.album {
+    margin-bottom: 10px;
+    margin-left: 65px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.music pre {
-    margin-left: 1.5%;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    color: #E0E0E0;
-}
-.music h1 {
-    margin-left: 1.5%;
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
-    color: #E0E0E0;
+    gap: 40px;
 }
 
-.track{
-    background-color: #3B82F6;
-    height: 40px;
-
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.left-side {
-    position: absolute;
-    left: 1%;
-}
-.song-info {
-    position: absolute;
-    left: 10%;
-}
-
-.duration {
-    position: absolute;
-    left: 80%;
-}
-.save {
-    position: absolute;
-    left: 65%
-}
-.more-option {
-    position: absolute;
-    left: 87%;
-}
-
-/**left side**/
-.track-number {
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-}
-.play-button {
-    display: none;
-}
-
-.track:hover .track-number {
-    display:none;
-}
-.track:hover .play-button {
-    display: block;
-}
-
-/**middle - info**/
-.track-name {
-    font-family: 'Open Sans', sans-serif;
-}
-.artist {
-    font-family: 'Open Sans', sans-serif;
-}
-/**right side**/
-.save, .more-option {
-    display: none;
-}
-.duration {
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.track:hover .save, .track:hover .more-option {
-    display: block;
-    font-size: 25px;
-    border: none;
-    background-color: transparent;
+.album p {
+    font-size: 22px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 
-
-
-
-
-
-/**Placeholder**/
-.info-inside {
-    width: 100px;
-    height: 150px;
-}
-
-.info h2{
-    margin: 5px;
-    font-family: 'Open Sans', sans-serif;
-    color: #E0E0E0;
-    font-size: 30px;
-}
-.info button {
-    margin-left: 10px;
-    height: 30px;
-    width: 120px;
-
-    border-radius: 10px;
-    border: 1px solid #B0B0B0;
-    background-color: #B0B0B0;
-
-}
-
-
-.info-inside {
-    height: 50%;
-    width: 100%;
-}
-.info-inside img {
-    height: 150px;
-    width: auto;
-    margin: 10px;
-    border: 5px solid white;
-
-    flex-shrink: 0;
-    float: left;
-}
-.info-inside p {
-    margin-left: 5px;
-    font-size: 16px;
-    line-height: 1.2;
-
-    color: #B0B0B0;
-    font-family: 'Open Sans', sans-serif;
-}
