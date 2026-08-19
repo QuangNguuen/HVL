@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -56,9 +56,10 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 
+    position: relative;
     gap: 15px;
 }
 
@@ -75,6 +76,18 @@ body {
 
     overflow-y: auto;
 }
+.main-stream::-webkit-scrollbar {
+    width: 12px;
+}
+.main-stream::-webkit-scrollbar-track {
+    background: rgba(74, 96, 128, 0.7);
+}
+.main-stream::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+
+
 
 .info {
     width: 25%;
@@ -97,7 +110,7 @@ body {
 .introduction img {
     height: 175px;
     margin: 20px;
-    border: 5px solid white;
+    border-radius: 4px;
 }
 .tribute {
     display: flex;
@@ -187,9 +200,7 @@ body {
     display: flex;
     align-items: center;
 
-    margin-top: 3px;
-
-    height: 40px;
+    height: 45px;
 }
 
 .left-side {
@@ -211,7 +222,7 @@ body {
 
     color: white;
 }
-.save {
+.save-song {
     position: absolute;
     left: 65%
 }
@@ -227,6 +238,7 @@ body {
 }
 .play-button {
     display: none;
+    color: white;
 }
 
 .track:hover .track-number {
@@ -244,15 +256,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 /**right side**/
-.save, .more-option {
+.save-song, .more-option {
     display: none;
+    color: white;
 }
 .duration {
     display: block;
     font-family: 'Open Sans', sans-serif;
 }
 
-.track:hover .save, .track:hover .more-option {
+.track:hover .save-song, .track:hover .more-option {
     display: block;
     font-size: 25px;
     border: none;

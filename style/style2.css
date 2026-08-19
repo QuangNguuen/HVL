@@ -1,14 +1,25 @@
 /***********/
 /**Sidebar**/
 /***********/
+.main {
+    background: transparent;
+    border: none;
 
-.main, .playlist, .library {
-    height: 30px;
-    width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
-    border-radius: 10px;
-    border: 1px solid #B0B0B0;
-    background-color: #B0B0B0;
+.playlist, .library {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 50px;
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+
+    text-align: left;
 }
 
 /********/
@@ -42,7 +53,7 @@
     height: 150px;
     width: auto;
     margin: 10px;
-    border: 5px solid white;
+    border-radius: 4px;
 
     flex-shrink: 0;
     float: left;

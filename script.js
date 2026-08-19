@@ -1,5 +1,6 @@
 //Album name, list and info//
 const songs = [
+    {number: 1, title: "Elegie", duration: "1:27", link:'../HVL/Elegie.flac'},
     {number: 2, title: "IDK", duration: "3:16", link:'../HVL/IDK.flac'},
     {number: 3, title: "Wtf Bby I'm Lit", duration: "2:46", link:'../HVL/WTF.flac'},
     {number: 4, title: "Anh Không Muốn Nó Dễ Dàng", duration: "2:45", link:'../HVL/AKMNDD.flac'},
@@ -30,6 +31,7 @@ const songs = [
     {number: 29, title: "Nguyễn Văn Mười", duration: "4:02", link:'../HVL/NVM.flac'},
     {number: 30, title: "Thịt Lợn", duration: "3:48", link:'../HVL/TL.flac'},
 ]
+let currentSong = null;
 
 //Fit songs in the web//
 const musicTrack = document.querySelector('.music');
@@ -54,34 +56,33 @@ function createSong(song) {
                         <p class="artist">RPT MCK</p>
                     </div>
 
-                    <button class="save">+</button>
+                    <button class="save-song">+</button>
                     <span class="duration">${song.duration}</span>
                     <button class="more-option">⋯</button>
+
+                    <audio src="${song.link}"></audio>
     `
+    const playButton = track.querySelector('.play-button');
+    const audio = track.querySelector('audio');
+
+    function playSong() {
+        if (currentSong !== null && currentSong !== audio) {
+            currentSong.pause();
+        }
+        currentSong = audio;
+        currentSong.play();
+    }
+
+    playButton.addEventListener('click', function(event) {
+        event.stopPropagation();
+        playSong()
+        console.log('button');
+    });
+    track.addEventListener('click', function() {
+        playSong();
+        console.log('div');
+    });
 
     return track;
 }
 
-
-//Play music//
-const selectTrack = document.getElementById('selectTrack');
-const selectButton = document.getElementById('play-button');
-
-const testTrack = document.getElementById('testTrack');
-const testButton = document.getElementById('testButton');
-
-function playMusic() {
-    selectTrack.addEventListener('click', function() {
-        testTrack.play();
-    });
-}
-
-function playButton() {
-    selectButton.addEventListener('click', function() {
-        event.stopPropagation();
-        testButton.play();
-    });
-}
-
-playMusic();
-playButton();
