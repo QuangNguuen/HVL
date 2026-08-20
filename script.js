@@ -31,12 +31,16 @@ const songs = [
     {number: 29, title: "Nguyễn Văn Mười", duration: "4:02", link:'../HVL/NVM.flac'},
     {number: 30, title: "Thịt Lợn", duration: "3:48", link:'../HVL/TL.flac'},
 ]
+const allTrack = [];
+
 let currentSong = null;
+let songPlay = false;
 
 //Fit songs in the web//
 const musicTrack = document.querySelector('.music');
 songs.forEach (song => {
     const track = createSong(song);
+    allTrack.push(track);
     musicTrack.appendChild(track);
 });
 
@@ -65,24 +69,39 @@ function createSong(song) {
     const playButton = track.querySelector('.play-button');
     const audio = track.querySelector('audio');
 
+
+    //Change Song//
     function playSong() {
         if (currentSong !== null && currentSong !== audio) {
+            currentSong.currentTime = 0;
             currentSong.pause();
         }
         currentSong = audio;
         currentSong.play();
     }
-
+    //Play the Song//
     playButton.addEventListener('click', function(event) {
         event.stopPropagation();
-        playSong()
-        console.log('button');
+        playSong();
+        theme(track);
     });
     track.addEventListener('click', function() {
         playSong();
-        console.log('div');
+        theme(track);
     });
 
     return track;
+
+    function theme(clicked) {
+        for (let i = 0; i < allTrack.length; i++) {
+            if (allTrack[i] === clicked) {
+                allTrack[i].style.backgroundColor = 'black';
+            }
+            else {
+                allTrack[i].style.backgroundColor = '#212B42';
+            }
+        }
+    }
 }
+
 
