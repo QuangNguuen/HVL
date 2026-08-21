@@ -1,53 +1,42 @@
 //Album name, list and info//
 const songs = [
-    {number: 1, title: "Elegie", duration: "1:27", link:'../HVL/Elegie.flac'},
-    {number: 2, title: "IDK", duration: "3:16", link:'../HVL/IDK.flac'},
-    {number: 3, title: "Wtf Bby I'm Lit", duration: "2:46", link:'../HVL/WTF.flac'},
-    {number: 4, title: "Anh Không Muốn Nó Dễ Dàng", duration: "2:45", link:'../HVL/AKMNDD.flac'},
-    {number: 5, title: "Baby (feat. marzuz)", duration: "2:53", link:'../HVL/Baby.flac'},
-    {number: 6, title: "Yêu Anh Giết Anh", duration: "2:45", link:'../HVL/YAGA.flac'},
-    {number: 7, title: "Mắt Môi Tay Chân (feat.Tage)", duration: "3:12", link:'../HVL/MMTC.flac'},
-    {number: 8, title: "Đao Của Anh Vừa", duration: "2:04", link:'../HVL/DCAV.flac'},
-    {number: 9, title: "Là Gì Của Nhau", duration: "2:22", link:'../HVL/LGCN.flac'},
-    {number: 10, title: "Night In Prague", duration: "3:33", link:'../HVL/NIP.flac'},
-    {number: 11, title: "Một Cái Ôm", duration: "3:21", link:'../HVL/MCO.flac'},
-    {number: 12, title: "Liệm", duration: "3:53", link:'../HVL/Liem.flac'},
-    {number: 13, title: "Nếu Như Ta Chẳng Còn (feat.A$AP Ướt Mi)", duration: "5:17", link:'../HVL/NNTCC.flac'},
-    {number: 14, title: "Ai Mới Là Kẻ Xấu Xa", duration: "3:11", link:'../HVL/AMLKXX.flac'},
-    {number: 15, title: "Slippery (feat.Tùng Dương)", duration: "3:35", link:'../HVL/Slippery.flac'},
-    {number: 16, title: "Intenpol", duration: "0:53", link:'../HVL/Intenpol.flac'},
-    {number: 17, title: "Tây Thi", duration: "1:44", link:'../HVL/TT.flac'},
-    {number: 18, title: "Hút Và Hút", duration: "2:14", link:'../HVL/HVH.flac'},
-    {number: 19, title: "Dưa Chua", duration: "3:02", link:'../HVL/DuaChua.flac'},
-    {number: 20, title: "Xa Xôi (feat.Obito)", duration: "3:37", link:'../HVL/XX.flac'},
-    {number: 21, title: "Che Phủ", duration: "2:35", link:'../HVL/ChePhu.flac'},
-    {number: 22, title: "Oanh M = Thuoc", duration: "3:24", link:'../HVL/OMBT.flac'},
-    {number: 23, title: "Ghet Xog Lai Thik", duration: "1:53", link:'../HVL/GXLT.flac'},
-    {number: 24, title: "Nhìn Kẻ Thù Của Tao", duration: "3:54", link:'../HVL/NKTCT.flac'},
-    {number: 25, title: "Envy (feat.THANHDRAW)", duration: "3:55", link:'../HVL/Envy.flac'},
-    {number: 26, title: "Cảm Ơn", duration: "2:39", link:'../HVL/CamOn.flac'},
-    {number: 27, title: "Không Cần Lo Cho Tao", duration: "2:36", link:'../HVL/KCLCT.flac'},
-    {number: 28, title: "Huh (feat.RPT Orijinn & THANKDRAW)", duration: "4:11", link:'../HVL/Huh.flac'},
-    {number: 29, title: "Nguyễn Văn Mười", duration: "4:02", link:'../HVL/NVM.flac'},
-    {number: 30, title: "Thịt Lợn", duration: "3:48", link:'../HVL/TL.flac'},
+    {number: "1", title: "Elegie", duration: "1:27", link:'../HVL/Elegie.flac'},
+    {number: "2", title: "IDK", duration: "3:16", link:'../HVL/IDK.flac'},
+    {number: "3", title: "Wtf Bby I'm Lit", duration: "2:46", link:'../HVL/WTF.flac'},
+    {number: "4", title: "Anh Không Muốn Nó Dễ Dàng", duration: "2:45", link:'../HVL/AKMNDD.flac'},
+    {number: "5", title: "Baby (feat. marzuz)", duration: "2:53", link:'../HVL/Baby.flac'},
+    {number: "6", title: "Yêu Anh Giết Anh", duration: "2:45", link:'../HVL/YAGA.flac'},
+    {number: "7", title: "Mắt Môi Tay Chân (feat.Tage)", duration: "3:12", link:'../HVL/MMTC.flac'},
+    {number: "8", title: "Đao Của Anh Vừa", duration: "2:04", link:'../HVL/DCAV.flac'},
+    {number: "9", title: "Là Gì Của Nhau", duration: "2:22", link:'../HVL/LGCN.flac'},
+    {number: "10", title: "Night In Prague", duration: "3:33", link:'../HVL/NIP.flac'},
+    {number: "11", title: "Một Cái Ôm", duration: "3:21", link:'../HVL/MCO.flac'},
+    {number: "12", title: "Liệm", duration: "3:53", link:'../HVL/Liem.flac'},
+    {number: "13", title: "Nếu Như Ta Chẳng Còn (feat.A$AP Ướt Mi)", duration: "5:17", link:'../HVL/NNTCC.flac'},
+    {number: "14", title: "Ai Mới Là Kẻ Xấu Xa", duration: "3:11", link:'../HVL/AMLKXX.flac'},
+    {number: "15", title: "Slippery (feat.Tùng Dương)", duration: "3:35", link:'../HVL/Slippery.flac'},
+    {number: "16", title: "Intenpol", duration: "0:53", link:'../HVL/Intenpol.flac'},
+    {number: "17", title: "Tây Thi", duration: "1:44", link:'../HVL/TT.flac'},
+    {number: "18", title: "Hút Và Hút", duration: "2:14", link:'../HVL/HVH.flac'},
+    {number: "19", title: "Dưa Chua", duration: "3:02", link:'../HVL/DuaChua.flac'},
+    {number: "20", title: "Xa Xôi (feat.Obito)", duration: "3:37", link:'../HVL/XX.flac'},
+    {number: "21", title: "Che Phủ", duration: "2:35", link:'../HVL/ChePhu.flac'},
+    {number: "22", title: "Oanh M = Thuoc", duration: "3:24", link:'../HVL/OMBT.flac'},
+    {number: "23", title: "Ghet Xog Lai Thik", duration: "1:53", link:'../HVL/GXLT.flac'},
+    {number: "24", title: "Nhìn Kẻ Thù Của Tao", duration: "3:54", link:'../HVL/NKTCT.flac'},
+    {number: "25", title: "Envy (feat.THANHDRAW)", duration: "3:55", link:'../HVL/Envy.flac'},
+    {number: "26", title: "Cảm Ơn", duration: "2:39", link:'../HVL/CamOn.flac'},
+    {number: "27", title: "Không Cần Lo Cho Tao", duration: "2:36", link:'../HVL/KCLCT.flac'},
+    {number: "28", title: "Huh (feat.RPT Orijinn & THANKDRAW)", duration: "4:11", link:'../HVL/Huh.flac'},
+    {number: "29", title: "Nguyễn Văn Mười", duration: "4:02", link:'../HVL/NVM.flac'},
+    {number: "30", title: "Thịt Lợn", duration: "3:48", link:'../HVL/TL.flac'},
 ]
-const allTrack = [];
+const displayTrack = []
 
-let currentSong = null;
-let songPlay = false;
-
-//Fit songs in the web//
-const musicTrack = document.querySelector('.music');
-songs.forEach (song => {
-    const track = createSong(song);
-    allTrack.push(track);
-    musicTrack.appendChild(track);
-});
-
+let songPlay = null;
 function createSong(song) {
     const track = document.createElement('div');
     track.className = 'track';
-    track.dataset.songNum = song.number;
 
     track.innerHTML = `
                     <div class="left-side">
@@ -69,39 +58,59 @@ function createSong(song) {
     const playButton = track.querySelector('.play-button');
     const audio = track.querySelector('audio');
 
-
-    //Change Song//
     function playSong() {
-        if (currentSong !== null && currentSong !== audio) {
-            currentSong.currentTime = 0;
-            currentSong.pause();
+        if(songPlay !== null && songPlay !== audio) {
+            songPlay.pause();
+            songPlay.currentTime = 0;
         }
-        currentSong = audio;
-        currentSong.play();
+        songPlay = audio;
+        songPlay.play();
     }
-    //Play the Song//
+
+    function theme(track) {
+        for (let i = 0; i < displayTrack.length; i++) {
+            const t = displayTrack[i];
+            const button = t.querySelector('.play-button');
+
+            if (t === track) {
+                const isPlay = t.dataset.playing = 'true';
+
+                if (isPlay) {
+                    t.style.backgroundColor = 'black';
+                    button.innerHTML = `<img src="../Image/pause.png" alt="Pause">`;
+                    t.dataset.playing = 'true';
+                }
+                else {
+                    t.style.backgroundColor = '#212B42';
+                    button.innerHTML = `<img src="../Image/playSong.png" alt="Play">`;
+                    t.dataset.playing = 'false';
+                }
+            }
+            else {
+                t.style.backgroundColor = '#212B42';
+                button.innerHTML = `<img src="../Image/playSong.png" alt="Play">`;
+                t.dataset.playing = 'false';
+            }
+        }
+    }
+
     playButton.addEventListener('click', function(event) {
         event.stopPropagation();
         playSong();
         theme(track);
-    });
+    })
+
     track.addEventListener('click', function() {
         playSong();
         theme(track);
-    });
+    })
 
     return track;
-
-    function theme(clicked) {
-        for (let i = 0; i < allTrack.length; i++) {
-            if (allTrack[i] === clicked) {
-                allTrack[i].style.backgroundColor = 'black';
-            }
-            else {
-                allTrack[i].style.backgroundColor = '#212B42';
-            }
-        }
-    }
 }
 
-
+const fullTrack = document.querySelector('.music');
+songs.forEach(song => {
+    const track = createSong(song);
+    displayTrack.push(track);
+    fullTrack.appendChild(track);
+})
