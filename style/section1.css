@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body, section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../Image/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/**Blank**/
+.blank {
+    height: 7.5%;
+    width: 100%;
+    background-color: black;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+/**Main**/
+.main {
+    height: 85%;
+    width: 100%;
+}
+
