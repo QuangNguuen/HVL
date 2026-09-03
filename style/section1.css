@@ -25,7 +25,7 @@ section {
 .blank {
     height: 40px;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     margin: 0.5% 0;
 }
 
@@ -33,5 +33,49 @@ section {
 .main {
     flex: 1;
     width: 100%;
+    display: flex;
+    gap: 10px;
 }
+
+.left {
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+
+.right {
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px;
+}
+
+.middle {
+    flex: 1;
+    background-color: rgba(74,96,128,0.5);
+    border-radius: 20px;
+}
+
+/**Inside middle**/
+.info {
+    display: flex;
+}
+    img {
+        width: 150px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .headline {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+        h1 {
+            color: white;
+            font-size: 70px;
+        }
+        h2 {
+            color: white;
+            font-size: 40px;
+        }
 
