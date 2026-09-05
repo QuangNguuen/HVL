@@ -42,7 +42,27 @@ section {
     width: 300px;
     background-color: rgba(0,0,0,0.6);
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
+    .home {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .home img {
+        height: 60px;
+        width: 60px;
+    }
+    .left-button {
+        height: 50px;
+    }
 
 .right {
     height: 100%;
