@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -55,13 +56,26 @@ section {
         align-items: center;
         justify-content: center;
         overflow: hidden;
+
+        margin: 20px;
+        border: none;
     }
     .home img {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
     .left-button {
         height: 50px;
+        width: 100%;
+        font-family:"League Spartan", sans-serif;
+        background-color: transparent;
+        border: none;
+
+        color: white;
+        font-size: 50px;
+        text-align: left;
+
+        margin-left: 20px;
     }
 
 .right {
